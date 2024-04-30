@@ -1,0 +1,22 @@
+Amazon elastic container service is a fully managed service which is provided by AWS it is mainly used to deploy containers 
+that are docker based by which you scale up and down depending on the traffic you’re going to get.
+●The containers will run inside the Amazon elastic Compute Cloud (EC2) instance.
+ 
+●Container: A container is a package that holds an application and everything dependencies, libraries, etc.) the application requires to run. 
+Containers are independent of the underlying operating system and hence container applications are fairly portable, flexible, and scalable. 
+This ensures the application will run always as expected irrespective of the system and environment in which a container is run.
+●Docker: Docker is software that facilitates and automates the installation and deployment of applications inside Linux containers.
+●Cluster: A logic group of EC2 instances running as a single application.
+●Container Instance: Each EC2 in an ECS Cluster is called a container instance.
+●Autoscaling With AWS ECS
+●Autoscaling is an AWS Compute service that allows your application to scale up/down according to EC2 instance CPU usage or some other criteria (Autoscaling policies) set by the user. 
+For example: For a web application, you can set an Autoscaling Policy like, when CPU usage exceeds 80% for five minutes add another EC2 instance with the same configurations.
+This will add another instance behind the Amazon ELB and allow requests divided into EC2 instances now.
+Earlier, the Autoscaling feature was only provided with AWS EC2 service, in the year 2016, it started to support ECS clusters as well.
+
+Features of ECS
+●Removes the need for users to manage their CPU type cluster the management system by interacting with AWS Fargate.
+●Allows seamless deployment of container-based applications. This can be scheduled or done by simple API calls.
+●AWS ECS takes care of the management and monitoring of the application cluster.
+●Amazon ECS is region specific. This means that a cluster can only scale up/down (start-up or shut-down container instances) in a single region.
+●Clusters are dynamically scalable.
